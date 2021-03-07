@@ -1,0 +1,26 @@
+{
+  "name": "opentracing-tutorial",
+  "version": "1.0.0",
+  "description": "Example application to demonstrate opentracing idea (on the example of Jaeger).",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start0": "PORT=8080 node -r esm --unhandled-rejections=strict ./src/server.js",
+    "start1": "PORT=8081 node -r esm --unhandled-rejections=strict ./src/server.js",
+    "start2": "PORT=8082 node -r esm --unhandled-rejections=strict ./src/server.js"
+  },
+  "keywords": [
+    "opentracing",
+    "jaeger"
+  ],
+  "author": "padys",
+  "license": "ISC",
+  "dependencies": {
+    "@godaddy/terminus": "^4.6.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "jaeger-client": "^3.18.1",
+    "node-fetch": "^2.6.1",
+    "opentracing": "^0.14.5"
+  }
+}
