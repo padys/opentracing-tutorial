@@ -34,7 +34,6 @@ Preferably the linux OS machine with:
       -p 14250:14250 \​
       -p 9411:9411 \​
       jaegertracing/all-in-one:latest​
-
     ```
 
 ## How to play?
@@ -63,14 +62,13 @@ Preferably the linux OS machine with:
 
     ```
     $ curl -H "jaeger-debug-id: some-correlation-id" http://127.0.0.1:8080/success_success_success
-
     ```
 
     TIP: You should see some logs in yours three terminals...
 
-3. Open Jaeger-UI client app in web browser - [http://localhost:16686/search​](http://localhost:16686/search​) - to see chain of requests.
+3. Open Jaeger-UI client app in web browser ([http://localhost:16686/search​](http://localhost:16686/search​)), to see the chain of requests.
 
-4. Feel free to call other endpoints and modify code!
+4. Feel free to call other endpoints and modify the code!
 
     For example, try comment lines `tracer.inject(...)` or launch [http://127.0.0.1:8080/success_error](http://127.0.0.1:8080/success_error). Do you see difference in Jaeger-UI diagrams? Look at sent headers, baggages in console logs...
 
