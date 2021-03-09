@@ -77,5 +77,5 @@ Preferably the linux OS machine with:
 * https://github.com/jaegertracing/jaeger-client-node
 * https://opentracing.io/
 * https://www.jaegertracing.io/
-* https://github.com/opentracing/specification/blob/master/specification.md
+* https://github.com/opentracing/specification
 * https://github.com/yurishkuro/opentracing-tutorial
